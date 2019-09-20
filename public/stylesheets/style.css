@@ -1,0 +1,70 @@
+body {
+  padding: 50px;
+  font: 10px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content .key {
+  border: 0.4rem solid white;
+  border-radius: 10px;
+  margin: 30px 10px;
+  padding: 5rem 0.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 0.5rem black;
+  text-transform: uppercase;
+}
+
+.content.pc .key {
+  transition: all 0.07s ease;
+  font-size: 16px;
+  padding: 20px 10px;
+  width: 100px;
+}
+
+.content.mobile .key {
+  flex: 1 0 20%;
+  font-size: 54px;
+  cursor: pointer;
+  box-shadow: -2px -2px 17px #333333;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
